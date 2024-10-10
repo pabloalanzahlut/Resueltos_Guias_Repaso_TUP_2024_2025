@@ -1,0 +1,19 @@
+
+programacion - disciplina
+programar - enseñar una habilidad
+programa - una solucion
+algoritmo - una idea aplicada
+instruccion - una pieza
+
+Datos - procesamiento - informacion
+
+lenguaje de programacion:
+lenguaje intermedio puedo enseñar a la pc
+
+La programación es una **disciplina** que implica el diseño, desarrollo y mantenimiento de soluciones para problemas complejos a través del uso de **lenguajes de programación**. 
+En esta disciplina, aprender a **programar** es adquirir una **habilidad** clave, que consiste en traducir ideas abstractas en un conjunto de instrucciones comprensibles por una computadora.
+
+Un **programa** es la **solución** a un problema, estructurado como una serie de pasos que el sistema debe ejecutar para obtener un resultado. Para construir un programa, se utiliza un **algoritmo**, que es una representación lógica de la **idea aplicada** para resolver un problema específico. 
+Este algoritmo se descompone en **instrucciones**, que son **piezas** individuales de acción que la máquina debe ejecutar.
+
+Los **datos** son la materia prima de la programación; a través del **procesamiento**, se transforman en **información** útil. Los lenguajes de programación actúan como un **lenguaje intermedio**, que permite enseñar a la máquina cómo llevar a cabo esas instrucciones de manera eficiente y comprensible para el hardware.
