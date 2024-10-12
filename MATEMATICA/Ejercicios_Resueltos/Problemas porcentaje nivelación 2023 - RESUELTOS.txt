@@ -1,0 +1,49 @@
+Vamos a resolver cada uno de los ejercicios paso a paso:
+
+1. 
+   - El 5% de $90,000 es:  
+      90,000 * 0.05 = 4,500 .
+   - Si le rebajan ese monto, deberá pagar:  
+      90,000 - 4,500 = 85,500 .
+
+   **Rta:** $85,500.
+
+2. 
+   - Si el recargo es del 5%, el precio final corresponde al 105% del precio de lista. Entonces, para encontrar el precio de lista:
+     777 = 1.05 * precio de lista 
+     precio de lista} = 777/1.05.
+
+   **Rta:** $740.
+
+3. 
+   - Para ganar un 20%, el precio de venta será el 120% del costo:
+     1500 * 1.8 = 1,800 
+
+   **Rta:** $1,800.
+
+4.    
+	- Primero, Pedro gasta el 20% de sus ahorros:
+      80000 * 0.20 = 16,000
+   
+	- Le quedan  80000 - 16000 = 64000 
+
+	- Luego, da a su hermano el 15% de lo que le queda:
+     	64000 * 0.15 = 9600 
+
+	- Entonces, a Pedro le quedan  64000 - 9600 = 54400 
+
+   **Rta:** $54400.
+
+5. 
+   - El 12.5% de la cuarta parte del perímetro es 75 cm, entonces:
+      0.125 * P/4 = 75 
+   
+	- Despejamos el perímetro P:
+     P/4 = 75/0.125 = 600 
+   
+	- El perímetro completo es P = 600 * 4 = 2400 
+   
+	- Como el perímetro de un cuadrado es 4 * {lado}, entonces el lado es:
+     {lado} = 2400/4 = 600 cm
+
+   **Rta:** 600 cm.
