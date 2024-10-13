@@ -1,0 +1,300 @@
+1- Diagrama de Flujo
+Inicio
+Ingresar Monto Solicitado y Plazo (meses)
+Calcular Total Préstamo = Monto Solicitado + (Monto Solicitado * Tasa de Interés * Plazo)
+Calcular Ganancia = Total Préstamo - Monto Solicitado
+Comparar si el Préstamo es mayor que el anterior mayor:
+Si: Actualizar Préstamo Mayor
+No: Continuar
+Comparar si el Préstamo es menor que el anterior menor:
+Si: Actualizar Préstamo Menor
+No: Continuar
+Calcular Promedio de Ganancia (sumar todas las ganancias y dividir entre el número de préstamos)
+Mostrar Préstamo Mayor, Préstamo Menor y Promedio de Ganancia
+Fin
+
+2-Diagrama de flujo
+Inicio
+Inicializar contador de mates regalados en 0
+Para cada venta (20 ventas):
+Ingresar la fecha de la venta.
+Ingresar los kilogramos de yerba vendidos.
+Calcular el precio por kilo:
+Si los kilogramos son mayores a 10, aplicar un descuento del 2%.
+Si no, el precio por kilo es el normal ($4500).
+Calcular el total a pagar (kilogramos * precio por kilo).
+Determinar si se regala un mate:
+Si el total a pagar supera los $70.000, sumar 1 al contador de mates regalados y mostrar "SÍ".
+Si no, mostrar "NO".
+Mostrar la cantidad de mates regalados al final.
+Fin
+
+3-Diagrama de flujo:
+Inicio
+Ingresar datos:
+Código de Servicio/Impuesto
+Fecha de Vencimiento
+Importe
+Fecha de Pago
+Calcular descripción según el código:
+Si código = 1 -> Descripción = "Luz"
+Si código = 2 -> Descripción = "Agua"
+Si código = 3 -> Descripción = "Gas"
+Si código = 4 -> Descripción = "Internet"
+Si código = 5 -> Descripción = "Expensas"
+Si código = 6 -> Descripción = "ABL"
+Determinar si el pago es en término:
+Si Fecha de Pago <= Fecha de Vencimiento -> Importe Total = Importe
+Si Fecha de Pago > Fecha de Vencimiento -> Importe Total = Importe + 8% del Importe
+Acumular gasto total y otros datos:
+Acumular importe al gasto total
+Verificar si es el importe más caro
+Contar facturas de Internet (si código = 4)
+Mostrar resultados del semestre
+Fin
+
+4-Inicio
+Para cada campamento (máximo 25):
+Ingresar mes.
+Ingresar cantidad de alumnos.
+Si cantidad de alumnos < 10, asignar 2 profesores.
+Si cantidad de alumnos entre 10 y 20, asignar 3 profesores.
+Si cantidad de alumnos > 20, asignar 4 profesores.
+Si mes es entre enero y junio, sueldo por profesor = 75.000.
+Si mes es entre julio y diciembre, sueldo por profesor = 90.000.
+Calcular sueldo total = cantidad de profesores * sueldo por profesor.
+Mostrar cantidad de profesores y sueldo total.
+Fin
+
+5-Inicio
+Leer importe de compra
+¿Importe < 1000?
+Sí: No hay descuento.
+No: Ir al siguiente paso.
+¿Importe >= 1000 y < 5000?
+Sí: Aplicar un descuento del 10%.
+No: Ir al siguiente paso.
+¿Importe >= 5000?
+Sí: Aplicar un descuento del 18%.
+Mostrar importe final con descuento
+Fin
+
+6-Diagrama de flujo:
+Inicio
+Ingresar índice de inflación
+Por cada uno de los 150 productos:
+Ingresar producto
+Ingresar precio de alta
+Calcular precio actualizado:
+Precio actualizado = Precio de alta * (1 + Índice de inflación / 100)
+Mostrar los datos del producto (producto, precio de alta, precio actualizado)
+Fin
+
+7-Diagrama de Flujo:
+Inicio
+Ingresar datos: Fecha, cantidad de dólares y valor del dólar.
+Actualizar total de dólares: Sumar la cantidad de dólares ingresada al total.
+Calcular total en pesos: Multiplicar el total de dólares por el valor del dólar.
+Mostrar resultados: Mostrar el total de dólares y el total en pesos.
+Fin
+
+8-Diagrama de flujo:
+Inicio
+Inicializar variables (matriz para 50 estudiantes, contadores para presentes, ausentes)
+Ingresar datos (Nro., DNI, Apellido, Nombre, Clase 1 a Clase 7) para cada estudiante
+Repetir para los 50 estudiantes
+Calcular resumen para cada estudiante:
+Inicializar contadores de presentes y ausentes
+Para cada clase, si está presente incrementar el contador de presentes, si no, incrementar el de ausentes
+Calcular porcentaje de asistencia
+Mostrar resumen para cada estudiante
+Calcular datos generales:
+Sumar porcentajes de asistencia
+Identificar el estudiante con más ausencias
+Calcular y mostrar porcentaje de asistencia promedio
+Mostrar estudiante con más ausencias
+Fin
+
+9-Diagrama de Flujo:
+Inicio
+Leer fecha, producto, y precio.
+¿Precio < 18,000?
+Sí → Cuotas = 2; Precio Final = Precio; Valor por cuota = Precio / 2.
+No → Continuar.
+¿Precio < 50,000?
+Sí → Cuotas = 3; Precio Final = Precio; Valor por cuota = Precio / 3.
+No → Continuar.
+¿Precio < 85,000?
+Sí → Cuotas = 6; Precio Final = Precio * 0.97; Valor por cuota = Precio Final / 6.
+No → Continuar.
+¿Precio >= 85,000?
+Sí → Cuotas = 9; Precio Final = Precio * 1.05; Valor por cuota = Precio Final / 9.
+Mostrar resultados: Fecha, Producto, Precio, Cuotas, Valor por cuota, Precio Final.
+Fin
+
+10-Diagrama de flujo:
+Inicio.
+Inicializar las variables:
+Una matriz gastos[6][n] para almacenar los montos de cada servicio por mes (donde n es la cantidad de servicios).
+Variables para el gasto mayor, gasto menor, total por mes, y gasto promedio.
+Entrada de datos:
+Por cada mes (6 en total), ingresar el gasto de cada servicio.
+Almacenar los datos en la matriz.
+Cálculo de totales:
+Para cada mes, sumar los gastos de todos los servicios y almacenarlos en el total mensual.
+Actualizar el gasto mayor y gasto menor durante el recorrido.
+Promedio de gastos:
+Sumar todos los totales mensuales y dividir entre 6 para obtener el gasto promedio.
+Imprimir resultados:
+Mostrar el total de gastos por mes, el gasto mayor, el gasto menor y el promedio.
+Fin.
+
+11-Diagrama de Flujo
+Aquí te presento un esquema básico del diagrama de flujo:
+
+Inicio
+Inicializar contadores:
+promocionados = 0
+regulares = 0
+desaprobados = 0
+Para cada alumno (1 a 60):
+Leer nombre y apellido
+Leer DNI
+Leer Nota 1
+Leer Nota 2
+Calcular promedio = (Nota 1 + Nota 2) / 2
+Si promedio >= 8 entonces:
+Incrementar promocionados
+Si promedio < 6 entonces:
+Incrementar desaprobados
+Si promedio >= 6 y promedio < 8 entonces:
+Incrementar regulares
+Mostrar resumen:
+Promocionados: ...
+Regulares: ...
+Desaprobados: ...
+Fin
+
+12-Diagrama de flujo
+Inicio
+Inicializar variables
+Contadores y acumuladores para medios de pago, total recaudado, etc.
+Solicitar fecha
+Solicitar producto
+Si el producto es Pan Lactal, setear precio a 1800.
+Si el producto es Galletas, setear precio a 600.
+Si el producto es Pan rallado, setear precio a 850.
+Si el producto es Budín marmolado, setear precio a 1300.
+Si el producto es Pan de pebete, setear precio a 150.
+Si el producto es Prepizza, setear precio a 900.
+Si no es válido, mostrar error y volver a solicitar el producto.
+Solicitar cantidad
+Solicitar medio de pago
+Si es MERCADOPAGO o TARJETA DE CRÉDITO, calcular total con recargo del 5%.
+Si es EFECTIVO, calcular total con descuento del 10%.
+Si es TRANSFERENCIA, calcular total sin cambios.
+Si no es válido, mostrar error y volver a solicitar el medio de pago.
+Actualizar contadores y acumuladores
+Repetir hasta completar 50 ventas
+Mostrar resultados:
+Cantidad de ventas por medio de pago.
+Recaudación total por medio de pago.
+Recaudación total.
+Precio promedio.
+Total recaudado por cada producto.
+Fin
+
+13-Diagrama de Flujo
+Inicio
+Definir Variables
+fecha_vencimiento[12]
+kw_consumidos[12]
+costo_por_kw[12]
+total_a_pagar[12]
+kw_total = 0
+total_pagado = 0
+kw_max = 0
+kw_min = ∞
+fecha_kw_max, fecha_kw_min
+Para cada mes de 1 a 12:
+Solicitar fecha_vencimiento
+Solicitar kw_consumidos
+Solicitar costo_por_kw
+Calcular total_a_pagar[i] = kw_consumidos[i] * costo_por_kw[i]
+Acumular kw_total += kw_consumidos[i]
+Acumular total_pagado += total_a_pagar[i]
+Si kw_consumidos[i] > kw_max:
+Actualizar kw_max = kw_consumidos[i]
+Guardar fecha_kw_max
+Si kw_consumidos[i] < kw_min:
+Actualizar kw_min = kw_consumidos[i]
+Guardar fecha_kw_min
+Calcular:
+kw_promedio = kw_total / 12
+pago_promedio = total_pagado / 12
+Mostrar resultados
+kw_total
+total_pagado
+kw_max y fecha_kw_max
+kw_min y fecha_kw_min
+kw_promedio
+pago_promedio
+Fin
+
+14-Diagrama de Flujo
+Inicio
+Definir Variables:
+codigo_cliente
+nombre_cliente
+servicio_contratado
+adicional
+medio_pago
+total_pagar
+suma_total
+cantidad_futbol
+max_precio
+nombre_max_precio
+Repetir para 100 ingresos:
+Solicitar codigo_cliente
+Validar codigo_cliente:
+Si codigo_cliente es "A001", nombre_cliente = "Crisan Viamonte"
+Si codigo_cliente es "A002", nombre_cliente = "Juliana Rosas"
+Si codigo_cliente es "A003", nombre_cliente = "Estefano Moreno"
+Si codigo_cliente es "A004", nombre_cliente = "Agusna Perez"
+Si codigo_cliente es "A005", nombre_cliente = "Estella Castellano"
+Si codigo_cliente es "A006", nombre_cliente = "Franco Antón"
+Si no, mostrar error y continuar con el siguiente ingreso
+Solicitar servicio_contratado (1 o 2)
+Calcular total_pagar:
+Si servicio_contratado == 1, total_pagar = 25000
+Si servicio_contratado == 2, total_pagar = 40000
+Solicitar adicional (sí o no)
+Si adicional == sí, agregar $10,000 a total_pagar
+Solicitar medio_pago (débito o crédito)
+Calcular descuento o recargo:
+Si medio_pago == "débito", total_pagar = total_pagar * 0.96
+Si medio_pago == "crédito", total_pagar = total_pagar * 1.05
+Actualizar estadísticas:
+suma_total += total_pagar
+Si adicional == sí, incrementar cantidad_futbol
+Si total_pagar > max_precio, actualizar max_precio y nombre_max_precio
+Calcular promedio: promedio = suma_total / 100
+Mostrar resultados:
+Promedio a pagar
+Cantidad de clientes que contrataron el pack futbol
+Nombre del cliente con el mayor precio a pagar e importe
+Fin
+
+
+
+
+
+
+
+
+
+
+
+
+
+
