@@ -8,7 +8,7 @@ int main() {
     string nom_cliente[max_clients];
     int servicio_contratado[max_clients]; // 1 para pack 1, 2 para pack 2
     char adicional[max_clients]; // 's' para sí, 'n' para no
-    string medio_pago[max_clients]; // "debito" o "credito"
+    char medio_pago[max_clients]; // 'd' para débito, 'c' para crédito
     double total_pagar[max_clients];
 
     double suma_total = 0;
@@ -44,18 +44,19 @@ int main() {
         cout << "¿Contrató pack futbol? (s/n): ";
         cin >> adicional[i];
 
-        if (adicional[i] == 's') {
+        // Asegurarse de que la respuesta sea 's' o 'n'
+        if (adicional[i] == 's' || adicional[i] == 'S') {
             total_pagar[i] += 10000;
             cantidad_futbol++;
         }
 
-        cout << "Medio de Pago (debito/credito): ";
+        cout << "Medio de Pago (d para débito, c para crédito): ";
         cin >> medio_pago[i];
 
-        // Aplicar descuentos o recargos
-        if (medio_pago[i] == "debito") {
+        // Asegurarse de que la respuesta sea 'd' o 'c'
+        if (medio_pago[i] == 'd' || medio_pago[i] == 'D') {
             total_pagar[i] *= 0.96; // Descuento del 4%
-        } else if (medio_pago[i] == "credito") {
+        } else if (medio_pago[i] == 'c' || medio_pago[i] == 'C') {
             total_pagar[i] *= 1.05; // Recargo del 5%
         }
 
@@ -65,10 +66,20 @@ int main() {
             max_precio = total_pagar[i];
             nombre_max_precio = nom_cliente[i];
         }
+
+        // Preguntar si desea ingresar otro cliente
+        char continuar;
+        if (i < max_clients - 1) { // Para evitar sobrepasar el límite
+            cout << "¿Desea ingresar otro cliente? (s/n): ";
+            cin >> continuar;
+            if (continuar == 'n' || continuar == 'N') { // Permitir tanto 'n' como 'N'
+                break; // Salir del bucle si el usuario no quiere continuar
+            }
+        }
     }
 
     // Calcular promedio
-    double promedio = suma_total / max_clients;
+    double promedio = suma_total / (cantidad_futbol > 0 ? cantidad_futbol : 1); // Evitar división por cero
 
     // Mostrar resultados
     cout << "\nPromedio a pagar: " << promedio << endl;
